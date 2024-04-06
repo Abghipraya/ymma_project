@@ -86,50 +86,7 @@
 							<!-- Single Widget -->
 							<!--/ End Single Widget -->
 							<!-- Single Widget -->
-							<div class="single-widget category">
-								<h3 class="title">Kategori Berita</h3>
-								<ul class="categor-list">
-                                @foreach ($kategori as $row)
-									<li><a href="{{ route('kategori', $row->slug) }}">{{$row->nama}}</a></li>
-                                    @endforeach
-								</ul>
-							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget recent-post">
-								<h3 class="title">Berita Terbaru</h3>
-								<!-- Single Post -->
-                                @foreach ($recentPosts as $post)
-								<div class="single-post">
-									<div class="image">
-										<img src="/upload/post/{{$post->sampul}}" alt="#">
-									</div>
-									<div class="content">
-										<h5><a href="/{{ $post->slug }}">{{$post->judul}}</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>{{$post->created_at->format('d F Y')}}</li>
-											<!-- <li><a href="/like/{{$artikel->id}}"><i class="fa-solid fa-heart" aria-hidden="true"></i>{{$like}}</li> -->
-										</ul>
-									</div>
-								</div>
-                                @endforeach
-								<!-- End Single Post -->
-								<!-- Single Post -->
-								
-							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
-								<ul class="tag">
-                                @foreach ($tag as $row)
-                                <li><a href="#">{{$row->nama}}</a></li>
-                                @endforeach
-								</ul>
-							</div>
-                            
+							
 							<!--/ End Single Widget -->
 						</div>
 					</div>

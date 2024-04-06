@@ -13,6 +13,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TujuanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -92,6 +93,8 @@ Route::get('/artikel-kategori/{slug}', [ArtikelController::class, 'kategori'])->
 Route::get('/artikel-tag/{slug}', [ArtikelController::class, 'tag']);
 Route::get('/artikel-banner/{slug}', [ArtikelController::class, 'banner']);
 Route::get('/artikel-author/{id}', [ArtikelController::class, 'author']);
+
+
 
 Route::middleware(['verified', 'role:pembaca'])->group(function () {
     Route::get('/like/{id}', [LikeController::class, 'like']);

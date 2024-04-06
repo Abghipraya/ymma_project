@@ -27,19 +27,18 @@
 
 @section('content')
    @isset($banner)
-   <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
             
             <div class="carousel-inner">
                 @foreach ($banner as $row)
-				<div class="carousel-item {{($loop->first) ? 'active' : ''}}">
-    <a href="/artikel-banner/{{$row->slug}}"><img src="/upload/banner/{{$row->sampul}}"  class="d-block w-100 img-size" alt="..."></a>
-    <div class="carousel-caption ">
-        <h3 class="mb-3">{{$row->judul}}</h3>
-        <p>{!!$row->konten!!}</p>
-        <a href="https://api.whatsapp.com/send?phone=6281269834835" class="button btn-call">Hubungi sekarang <ion-icon name="logo-whatsapp" class="icon-size"></ion-icon></a>
-    </div>
-</div>
-
+                    <div class="carousel-item {{($loop->first) ? 'active' : ''}}">
+                        <a href="/tujuan/{{$row->slug}}"><img src="/upload/banner/{{$row->sampul}}"  class="d-block w-100 img-size" alt="..."></a>
+                        <div class="carousel-caption ">
+                            <h3 class="mb-3">{{$row->judul}}</h3>
+                            <p>{!!$row->konten!!}</p>
+                            <a href="#" class="button btn-call ">Hubungi sekarang  <ion-icon name="logo-whatsapp" class="icon-size"></ion-icon></a>
+                        </div>
+                    </div>
                 @endforeach
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -112,63 +111,15 @@
 			</div>
 		</section>
 		<!--/End Start schedule Area -->
-		<div class="section-title">
-							<h2>IMPACT REPORT</h2>
-							<p>Lorem Ipsum dolr et si amet</p>
-						</div>
-		<div id="fun-facts" class="fun-facts section overlays">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="single-fun">
-						<i class="fa-solid fa-hospital-user"></i>
-						<div class="content">
-							<span class="counter">4.254.815</span>
-							<p>Total Terkonfirmasi</p>
-						</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-fun">
-						<i class="fa-solid fa-user-doctor"></i>
-						<div class="content">
-							<span class="counter">8.040</span>
-							<p>Isolasi/Perawatan</p>
-						</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-fun">
-						<i class="fa-solid fa-prescription-bottle-medical"></i>
-						<div class="content">
-							<span class="counter">4.102.993</span>
-							<p>Sembuh</p>
-						</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-						<i class="fa-solid fa-heart-pulse"></i>
-							<div class="content">
-								<span class="counter">143.782</span>
-								<p>Meninggal</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- Start Feautes -->
 
-		<!--/ End Feautes -->
+
+        <!-- Start Feautes -->
 		<section class="Feautes section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>PROGRAM MENTARI MERAKI ASA</h2>
+							<h2>Dukungan dan Bantuan Untuk Seluruh Masyarakat</h2>
 							<img src="/upload/assets/section-img.png" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
@@ -179,9 +130,9 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-							<i class="fa-solid fa-hand-holding-heart"></i>
+                            <i class="fa-solid fa-truck-medical"></i>
 							</div>
-							<h3>Sosial</h3>
+							<h3>Emergency Help</h3>
 							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
 						</div>
 						<!-- End Single features -->
@@ -190,9 +141,9 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-							<i class="fa-solid fa-people-group"></i>
+                            <i class="fa-solid fa-mortar-pestle"></i>
 							</div>
-							<h3>Kemanusiaan</h3>
+							<h3>Enriched Pharmecy</h3>
 							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
 						</div>
 						<!-- End Single features -->
@@ -201,9 +152,9 @@
 						<!-- Start Single features -->
 						<div class="single-features last">
 							<div class="signle-icon">
-							<i class="fa-solid fa-place-of-worship"></i>
+                            <i class="fa-solid fa-stethoscope"></i>
 							</div>
-							<h3>Keagamaan</h3>
+							<h3>Medical Treatment</h3>
 							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
 						</div>
 						<!-- End Single features -->
@@ -211,14 +162,52 @@
 				</div>
 			</div>
 		</section>
-		<!--/End Start schedule Area -->
-
-
-        <!-- Start Feautes -->
-	
 		<!--/ End Feautes -->
 
-       
+        <div id="fun-facts" class="fun-facts section overlays">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-fun">
+						<i class="fa-solid fa-hospital"></i>
+						<div class="content">
+							<span class="counter">3468</span>
+							<p>Hospital Rooms</p>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-fun">
+						<i class="fa-solid fa-user-doctor"></i>
+						<div class="content">
+							<span class="counter">3468</span>
+							<p>Specialist Doctors</p>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-fun">
+						<i class="fa-solid fa-bed"></i>
+						<div class="content">
+							<span class="counter">3468</span>
+							<p>Happy Patients</p>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+						<i class="fa-solid fa-calendar-days"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<!-- Start Why choose -->
@@ -419,7 +408,7 @@ dan membawa perubahan positif bagi masyarakat.</p>
 					</div>
 				</div>
 				<div class="row">
-				@foreach ($artikel as $row)
+				@foreach ($tujuan as $row)
 					<div class="col-lg-4 col-md-6 col-12">
 						<!-- Single Blog -->
 						<div class="single-news mb-5">
